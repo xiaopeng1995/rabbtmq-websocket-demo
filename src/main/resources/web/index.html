@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="UTF-8">
+   <title>接收来自rabbitmq的消息</title>
+   <style>
+      .status {
+         border-radius: 5px;
+         height: 200px;
+         width: 90%;
+         padding: 5px;
+         background-color: #AAA;
+         overflow: scroll;
+      }
+   </style>
+</head>
+<body>
+
+<h1>接收来自rabbitmq的消息</h1>
+
+<div id="status" class="status">准备连接..</div>
+
+<h2>Test-controls</h2>
+<button id="connectBtn">连接</button>
+<button id="disconnectBtn">断开</button>
+<br><hr>
+<label for="msg">用户ID:</label>
+<input type="text" id="msg" value='{"userId":"1001"}'/>
+<button id="sendBtn">绑定用户</button>
+<button id="broadcastBtn">广播</button>
+
+
+<script src="/web/js/jquery.min.js"></script>
+<script src="/web/js/main.js"></script>
+</body>
+</html>

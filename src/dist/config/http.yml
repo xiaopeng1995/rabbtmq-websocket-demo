@@ -1,0 +1,29 @@
+logging:
+  level: INFO
+  loggers:
+      "src.main.java.websocket": DEBUG
+  appenders:
+    - type: console
+      threshold: ALL
+      target: stdout
+      timeZone: Asia/Shanghai
+      logFormat: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %c{20} - %msg%n %ex{full}"
+    - type: file
+      currentLogFilename: src/log/http.log
+      threshold: ALL
+      archive: true
+      archivedLogFilenamePattern: lsrc/og/archive/http-%d.log
+      archivedFileCount: 5
+      timeZone: Asia/Shanghai
+      logFormat: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %c{20} - %msg%n %ex{full}"
+
+server:
+  type: simple
+  applicationContextPath: /
+  adminContextPath: /admin
+  connector:
+    type: http
+    port: 8091
+
+  requestLog:
+    appenders: []

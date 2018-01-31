@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.bazaarvoice.dropwizard:dropwizard-webjars-bundle:0.2.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bazaarvoice.dropwizard/dropwizard-webjars-bundle/0.2.1/6d7343e9f9a65a27e31901ada8f807b22c3b3ed5/dropwizard-webjars-bundle-0.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bazaarvoice.dropwizard/dropwizard-webjars-bundle/0.2.1/e4a7e443cea9b38ca2941bdf1d190d5522640481/dropwizard-webjars-bundle-0.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

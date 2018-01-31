@@ -1,0 +1,30 @@
+group 'rabbtmq-websocket-demo'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'application'
+
+mainClassName = "websocket.WebsocketApp"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    // apache commons
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'commons-configuration:commons-configuration:1.10'
+    // dropwizard
+    compile 'io.dropwizard:dropwizard-core:0.9.2'
+    compile 'io.dropwizard:dropwizard-auth:0.9.2'
+    compile 'commons-validator:commons-validator:1.5.0'
+    compile 'com.bazaarvoice.dropwizard:dropwizard-webjars-bundle:0.2.1'
+    compile 'io.dropwizard:dropwizard-assets:0.8.0-rc1'
+
+    // rabbitmq
+    compile 'com.rabbitmq:amqp-client:3.6.0'
+    //websocket
+    compile group: 'org.eclipse.jetty.websocket', name: 'websocket-server', version: '9.2.4.v20141103'
+}
